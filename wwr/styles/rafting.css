@@ -1,7 +1,7 @@
 :root {
     --primary-color: rgba(11,156,49,1); /*Green*/
-    --secondary-color: rgba(25,31,52,0.6); /*Gray*/
-    --accent1-color: rgba(255,0,0,0.8);
+    --secondary-color: rgba(25,31,52,1); /*Gray*/
+    --accent1-color: rgba(0, 8, 255, 0.836);
     --accent2-color: rgba(0,0,255,1);
     --heading-font: "Ahoroni", Ahoroni;
     --body-font: "Aldhabi", Aldahabi;
@@ -21,11 +21,14 @@ header {
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #f5f5f5; /* softer background */
 }
 
 header, main, footer {
-    width: 840px;
+    max-width: 840px;
+    width: 100%;
     margin: 0 auto;
+    padding: 16px;
 }
 
 h1, h2 {
@@ -44,12 +47,30 @@ nav,p,section,article {
 
 .hero {
     position: relative;
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+    background-color: rgba(0, 8, 255, 0.7);
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    border-radius: 8px;
 }
 
 h1 {
@@ -66,4 +87,15 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+.socialmedia a img {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+    transition: transform 0.3s ease;
+}
+
+.socialmedia a:hover img {
+    transform: scale(1.1);
 }
