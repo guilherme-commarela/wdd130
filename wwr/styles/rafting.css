@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgba(11,156,49,1); /* Green */
+    --primary-color: #08702F; /* Darker Green to better contrast */
     --secondary-color: rgba(25,31,52,1); /* Gray */
     --accent1-color: #0027A0;
     --accent2-color: rgba(0,0,255,1);
@@ -20,6 +20,17 @@ header {
     background-color: var(--primary-color);
     color: white;
 }
+
+main section {
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.5;
+}
+
 
 header img {
     grid-area: logo;
