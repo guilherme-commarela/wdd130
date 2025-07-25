@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #a58ee8; /* Light purple (accessible) */
+  --primary-color: #08702F; /* Darker green for better contrast */
   --secondary-color: #191f34; /* Dark gray/navy */
   --accent1-color: #0027a0;
   --accent2-color: #0000ff;
@@ -124,11 +124,13 @@ main {
 }
 
 .history img {
-  width: 120px;
+  width: 300px;
+  max-width: 90%;
   height: auto;
   background-color: var(--accent1-color);
   padding: 0.5rem;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* ADVENTURES */
@@ -181,4 +183,11 @@ footer .socialmedia {
 footer .socialmedia img {
   width: 32px;
   height: 32px;
+  transition: transform 0.3s ease;
+}
+
+footer .socialmedia img:hover {
+  transform: scale(1.5);
+  filter: brightness(1.2);
+  cursor: pointer;
 }
