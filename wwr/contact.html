@@ -49,6 +49,37 @@
             <img src="images/rafting-3.jpg" alt="Employee that will help you.">
             <figcaption>Tom Miller - Rafting Navigator</figcaption>
         </figure>
+     <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <div class="form-item column2">
+                <label for="userame">User Name:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-item column2">
+                <label for="usermail">Email:</label>
+                <input type="email" id="usermail" name="usermail">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Purpose of the Message</legend>
+            <label for="purpose">What is the purpose of your message?</label>
+            <input type="radio" id="generalinquiry" name="generalinquiry">
+            <input type="radio" id="reservationquestion" name="reservationquestion">
+            <input type="radio" id="websitesuggestion" name="websitesuggestion">
+        </fieldset>
+        <fieldset>
+            <legend>Message</legend>
+            <label for="message">Type here your message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Message here ..."></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Newsletter Subscription</legend>
+            <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
     </main>  
     <footer>
         <p>&copy;2025 🌲 White Water Rafting 🌲 Guilherme Commarela</p>

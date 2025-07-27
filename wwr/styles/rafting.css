@@ -191,3 +191,27 @@ footer .socialmedia img:hover {
   filter: brightness(1.2);
   cursor: pointer;
 }
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  background-color: #eee;
+  display: grid;
+}
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+}
+legend {
+  padding: 0.5rem;
+  color: navy;
+  font-size: 0.8rem;
+}
+label, input, button, select, textarea {
+  font-family: Roboto, Arial, sans-serif;
+}
