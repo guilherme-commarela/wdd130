@@ -49,11 +49,11 @@
             <img src="images/rafting-3.jpg" alt="Employee that will help you.">
             <figcaption>Tom Miller - Rafting Navigator</figcaption>
         </figure>
-     <form>
+     <form action="form-handler.php" method="post">
         <fieldset>
             <legend>Contact Information</legend>
             <div class="form-item column2">
-                <label for="userame">User Name:</label>
+                <label for="username">User Name:</label>
                 <input type="text" id="username" name="username">
             </div>
             <div class="form-item column2">
@@ -62,11 +62,19 @@
             </div>
         </fieldset>
         <fieldset>
-            <legend>Purpose of the Message</legend>
-            <label for="purpose">What is the purpose of your message?</label>
-            <input type="radio" id="generalinquiry" name="generalinquiry">
-            <input type="radio" id="reservationquestion" name="reservationquestion">
-            <input type="radio" id="websitesuggestion" name="websitesuggestion">
+        <legend>Purpose of the Message</legend>
+        <label>
+            <input type="radio" id="generalinquiry" name="purpose" value="general">
+            General Inquiry
+        </label><br>
+        <label>
+            <input type="radio" id="reservationquestion" name="purpose" value="reservation">
+            Reservation Question
+        </label><br>
+        <label>
+            <input type="radio" id="websitesuggestion" name="purpose" value="website">
+            Website Suggestion
+        </label>
         </fieldset>
         <fieldset>
             <legend>Message</legend>
@@ -76,7 +84,7 @@
         <fieldset>
             <legend>Newsletter Subscription</legend>
             <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-            <input type="checkbox" id="subscribe" name="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
         </fieldset>
         <button type="submit">Submit</button>
     </form>
